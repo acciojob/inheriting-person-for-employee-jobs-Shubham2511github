@@ -4,7 +4,10 @@ function Person(name, age) {
 	this.age = age;
 }
 Person.prototype.greet = function(){
+	setTimeout(()=>{
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
+	},4000);
+		
 };
 
 function Employee(name, age, jobTitle) {
